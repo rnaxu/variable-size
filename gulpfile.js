@@ -1,5 +1,5 @@
 /**
- * gulp
+ * variable-size
  *
  * ** ビルド
  *
