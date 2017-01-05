@@ -239,18 +239,6 @@ gulp.task('uglify', function () {
     }));
 });
 
-// copy
-gulp.task('copy_lib', function () {
-  return gulp.src(path.js_src + 'lib/*.js')
-    .pipe(plumber({
-      errorHandler: notify.onError('<%= error.message %>')
-    }))
-    .pipe(gulp.dest(path.dist + 'js/lib/'))
-    .pipe(size({
-      title: 'size : copy_lib'
-    }));
-});
-
 // eslint
 var eslint = require('gulp-eslint');
 
@@ -330,7 +318,7 @@ gulp.task('build:css', function () {
 
 // build:js
 gulp.task('build:js', function () {
-  gulpSequence('eslint', 'browserify', 'uglify', 'copy_lib')();
+  gulpSequence('eslint', 'browserify', 'uglify')();
 });
 
 // build:img
