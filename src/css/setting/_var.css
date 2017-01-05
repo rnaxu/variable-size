@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* font-family */
+$font-family-default: "Hiragino Kaku Gothic Pro", Meiryo, "ＭＳ Ｐゴシック", Osaka, Arial, Sans-serif;
+
+/* font-size */
+$font-size-root: 14px;
+$font-size-root-vw: 4.375vw;
+$font-size-base: 1rem;
+
+/* pxはiPhone5で見たときのpx */
+$font-size-xxxl: 1.57143rem; /* 22px */
+$font-size-xxl: 1.35714rem; /* 19px */
+$font-size-xl: 1.21429rem; /* 17px */
+$font-size-l: 1.14286rem; /* 16px */
+$font-size-m: 1.07142rem; /* 15px */
+$font-size-s: 0.92857rem; /* 13px */
+$font-size-xs: 0.85714rem; /* 12px */
+$font-size-xxs: 0.78571rem; /* 11px */
+$font-size-xxxs: 0.71429rem; /* 10px */
+
+/* color */
+$color-txt-link: #1075bf;
+$color-txt-default: #666;
+$color-txt-dark: #444;
+$color-txt-strong: #212121;
+$color-txt-light-strong: #403b36;
+
+$color-bg-white: #fff;

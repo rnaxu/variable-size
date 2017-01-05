@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* font-size */
+.txt-base {
+  font-size: $font-size-base;
+}
+
+.txt-l { /* 16px */
+  font-size: $font-size-l;
+}
+
+.txt-s { /* 13px */
+  font-size: $font-size-s;
+}
+
+.txt-xs { /* 12px */
+  font-size: $font-size-xs;
+}
+
+.txt-xxxs { /* 10px */
+  font-size: $font-size-xxxs;
+}
+
+
+/* font-weight */
+.txt-bold {
+  font-weight: bold;
+}
+
+
+/* color */
+.txt-link { /* #1075bf */
+  color: $color-txt-link;
+}
+
+.txt-default { /* #666 */
+  color: $color-txt-default;
+}
+
+.txt-dark {
+  color: $color-txt-dark;
+}
+
+.txt-strong { /* #212121 */
+  color: $color-txt-strong;
+}
+
+.txt-light-strong { /* #403b36 */
+  color: $color-txt-light-strong;
+}
+
+
+/* text-align */
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/* 文字省略 */
+.txt-ellipsis { /* 1行 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

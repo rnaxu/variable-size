@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.header {
+  height: 45px;
+  background-image: linear-gradient(to bottom, #e63642 0%,#eb5d67 1%,#e53440 2%,#e0262c 3%,#bd0915 100%);
+  box-shadow: 0 1px 4px rgba(0,0,0,.6);
+}

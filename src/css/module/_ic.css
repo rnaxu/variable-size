@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* before要素でアイコンを表示 */
+.ic-b {
+  position: relative;
+  &::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  &--search {
+    padding-left: calc($search-width / 2 + 8px);
+    &::before {
+      @mixin sprite $search;
+    }
+  }
+  &--star {
+    padding-left: calc($star-width / 2 + 3px);
+    &::before {
+      @mixin sprite $star;
+    }
+  }
+}
+
+/* 要素自体でアイコンを表示 */
+.ic {
+  display: block;
+  &--map {
+    @mixin sprite $map;
+    margin: 0 auto 4px;
+  }
+  &--sort {
+    @mixin sprite $sort;
+    margin: 0 auto 4px;
+  }
+  &--arrow_prev, &--arrow_next {
+    width: 7px;
+    height: 7px;
+  }
+  &--arrow_prev {
+    transform: rotate(-135deg);
+  }
+  &--arrow_next {
+    transform: rotate(45deg);
+  }
+  &--arrow_active {
+    border-top: solid 2px #000;
+    border-right: solid 2px #000;
+  }
+  &--arrow_inactive {
+    border-top: solid 2px #e0e0e0;
+    border-right: solid 2px #e0e0e0;
+  }
+}

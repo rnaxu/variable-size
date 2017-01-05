@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.resultHead {
+  &__header {
+    padding: 14px 8px;
+  }
+  &__body {
+    text-align: center;
+    padding-bottom: 14px;
+  }
+  &__footer {
+    padding: 4px 8px;
+    border-top: solid 1px #e2dcd4;
+  }
+}
+

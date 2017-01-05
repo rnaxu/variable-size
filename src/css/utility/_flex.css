@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.flex {
+  display: flex;
+}
+
+.flex-align_center {
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1;
+}

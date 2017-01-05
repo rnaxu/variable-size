@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+html {
+  font-size: $font-size-root; /* レガシーブラウザ用 */
+  font-size: $font-size-root-vw;
+}
+
+body {
+  font-family: $font-family-default;
+  font-size: $font-size-base;
+  color: $color-txt-default;
+  background-color: $color-bg-white;
+  line-height: 1.4;
+  word-break: break-all;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: $color-txt-link;
+  text-decoration: none;
+}

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.cassette {
+  padding: 16px 0;
+  background-color: #e3dcd4;
+  box-shadow: rgba(0,0,0,.2) 0 4px 2px -3px inset;
+  &__item {
+    margin: 0 8px 12px;
+    border-radius: 3px;
+    background-color: #fff;
+    display: block;
+  }
+  &__container {
+    border-bottom: solid 1px #eee;
+    padding: 12px;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

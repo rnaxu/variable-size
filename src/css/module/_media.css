@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.media {
+  display: flex;
+  &__left {
+    margin-right: 10px;
+  }
+  &__body {
+    flex: 1;
+  }
+}
