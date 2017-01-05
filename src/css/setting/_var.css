@@ -6,6 +6,7 @@ $font-family-default: "Hiragino Kaku Gothic Pro", Meiryo, "ＭＳ Ｐゴシッ�
 /* font-size */
 $font-size-root: 14px;
 $font-size-root-vw: 4.375vw;
+$font-size-root-max: 18px;
 $font-size-base: 1rem;
 
 /* pxはiPhone5で見たときのpx */
