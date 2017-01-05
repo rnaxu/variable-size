@@ -1,9 +1,30 @@
 @charset "utf-8";
 
+/* sprite */
 @define-mixin sprite $name {
   background-image: url($(name)-image);
   background-size: calc($(name)-total-width / 2) calc($(name)-total-height / 2);
   background-position: calc($(name)-offset-x / 2) calc($(name)-offset-y / 2);
   width: calc($(name)-width / 2);
   height: calc($(name)-height / 2);
+}
+
+/* vw-width */
+@define-mixin vw-width $width {
+  width: calc($width / 320 * 100)vw;
+
+  /* 画面幅が iPhone7 Plus 以上の場合、 width を固定 */
+  @media screen and (min-width: 415px) {
+    width: calc(414 / 320 * $width)px;
+  }
+}
+
+/* vw-height */
+@define-mixin vw-height $height {
+  height: calc($height / 320 * 100)vw;
+
+  /* 画面幅が iPhone7 Plus 以上の場合、 height を固定 */
+  @media screen and (min-width: 415px) {
+    height: calc(414 / 320 * $height)px;
+  }
 }
